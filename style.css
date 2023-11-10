@@ -22,6 +22,11 @@ h2 {
   color: #343434;
 }
 
+.section {
+  padding: 10px;
+  margin: 10px;
+  border: 5px;
+}
 .section h2 {
   border-bottom: 2px solid #003dff;
   padding-bottom: 5px;
@@ -38,10 +43,6 @@ li::before {
   height: 5px;
   vertical-align: middle;
   border-radius: 10px;
-}
-
-header {
-  display: flex;
 }
 
 .gauche {
@@ -62,4 +63,56 @@ header {
 
 main {
   display: flex;
+}
+
+img {
+  border-radius: 50%;
+}
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    #003dff 0%,
+    #4613ff 29%,
+    #4f22c1 67%,
+    #003dff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1s linear infinite;
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.project-tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 100%;
+}
+
+.page-header {
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(120deg, #f1f1f1, #dbdbdb);
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 10px #777;
+  border-radius: 50%;
+  margin-top: 40px;
 }
