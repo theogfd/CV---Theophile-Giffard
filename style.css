@@ -42,3 +42,27 @@ li::before {
   vertical-align: middle;
   border-radius: 10px;
 }
+
+header {
+  display: flex;
+}
+
+.gauche {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border: 5px;
+}
+
+.droite {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  border: 5px;
+}
+
+main {
+  display: flex;
+}
