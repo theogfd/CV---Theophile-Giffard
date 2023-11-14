@@ -46,23 +46,17 @@ li::before {
 }
 
 .gauche {
-  width: 50%;
   padding: 10px;
   margin: 10px;
   border: 5px;
 }
 
 .droite {
-  width: 50%;
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 10px;
   border: 5px;
-}
-
-main {
-  display: flex;
 }
 
 img {
@@ -124,22 +118,14 @@ img {
   margin: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
-
-  .gauche,
-  .droite {
-    width: 100%;
-  }
-}
-
 /* Styles pour les petites résolutions (écrans mobiles) */
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
+  main {
+    display: flex;
+  }
   .gauche,
   .droite {
-    width: 100%;
+    flex: 50%;
   }
 }
