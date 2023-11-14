@@ -116,3 +116,16 @@ img {
   border-radius: 50%;
   margin-top: 40px;
 }
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+  }
+}
