@@ -125,7 +125,7 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .main {
+  main {
     flex-direction: column-reverse;
   }
 }
