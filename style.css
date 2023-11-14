@@ -124,8 +124,22 @@ img {
   margin: 10px;
 }
 
-@media screen (max-width: 768px) {
-  .main {
-    display: inline;
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .gauche,
+  .droite {
+    width: 100%;
+  }
+}
+
+/* Styles pour les petites résolutions (écrans mobiles) */
+
+@media screen and (max-width: 768px) {
+  .gauche,
+  .droite {
+    width: 100%;
   }
 }
